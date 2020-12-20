@@ -1,0 +1,132 @@
+
+body{
+    margin:0;
+    --light-o:#e65212;
+    --dark-o:#e34500;
+    --dark-b:#0d102b;
+    --shadow:#d1d1d1;
+    --black:#212121;
+    background-color: var(--shadow);
+    font-family:Barlow;
+}
+header{
+    background-color: white;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: space-around;
+}
+header .my-logo{
+    display: grid;
+    margin-left: 6vw;;
+    align-items: center;
+    width:12vw;
+    grid-template-columns:30% 70%;
+
+}
+
+
+header .my-logo .img-dp {
+    background: url("DP.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:6vh;
+    width: 6vh;;
+    background-position: center;
+    
+    clip-path: circle(50% at 50% 50%);
+}
+header .my-logo .name{
+    font-size: 25px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 600;
+   
+}
+header .nav-right{
+    margin-right: 6vw;
+
+    align-items: center;
+}
+header .nav-right nav{
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding:10px 20px;
+    font-size: 18px;
+    float:left;
+    color:var(--black);
+    font-weight: 600;
+}
+li:hover{
+    color:var(--dark-o);
+    cursor: pointer;
+}
+ul #free-c{
+    background-color: var(--light-o);
+    color: white;
+    border-radius: 6px;;
+    padding:10px 25px;
+    cursor: pointer;
+    position: relative;
+}
+/* ul li::after{
+    content:'';
+    position: absolute;;
+    left:0;
+    bottom:0;
+    background-color: var(--shadow);
+    height:2px;
+    width: 100%;
+    z-index:1005;
+}
+ul li:hover li::after{
+    width: 100%;
+    transition: 0.3s ease-in-out;
+} */
+section{
+    position: absolute;
+    top:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.font{
+    font-family: "Della Respira";
+}
+.container .left h3{
+    padding:10px;
+    font-size: 30px;
+    font-family: "Della Respira";
+}
+.container .left p{
+    padding:10px;
+}
+.container .right{
+    background-color: blue;
+}
+.container .right h3{
+    padding:10px;
+    font-size: 30px;
+    font-family: "Della Respira";
+}
+.container .right p{
+    padding:10px;
+    font-size: 50px;
+}
