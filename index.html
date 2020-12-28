@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Della+Respira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Pridi&display=swap" rel="stylesheet">
     <link href = "index.css" rel = "stylesheet">
+    <link href=  "hover.css" rel = "stylesheet">
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
                     <li>Skills</li>
                     <li>Education</li>
                     <li>Contact</li>
-                    <li id="free-c">
+                    <li id="free-c" class = "inverted btn hvr-bounce-to-right">
                         <div class ="text">
                             Free Consultancy
                         </div>
@@ -35,30 +36,92 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div class = "container">
-            <div class = "left">
-                <h3>Designing With Passion While Exploring The World. </h3>
-        <p> Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua.
-            Quis ipsum suspendisces gravida. Risus commodo viverra sebfd 
-            dho eiusmod tempor maecenas accumsan lacus.</p>
-
-        <p>Consectetur adipiscing elit,
-         sed do eiusmod tempor ididunt ut labore et dolore magna aliqua. </p>
-            </div>
-            <div class = "right">
-                <h3>
-                    Any Type of Query
-                    <br>
-                    & Disscussion.
-                </h3>
-                <p> Late talk with me!</p>
-                <a href = "#">.com</a>
+    <section class = "hero-section">
+        <div class="hero-cont">
+            <div style="font-size: 0.8em; color:var(--dark-r);margin-left: 1%;">PROVIDING EFFECTIVE IT SOLUTIONS</div>
+            <div style = "font-family: 'Pridi'; font-size: 2em; line-height: 90%;margin-left: 1%; letter-spacing: 0.08em;">I'm</div>
+            <div style = "font-family:'Pridi'; font-size:4.3em;font-weight: 600;line-height: 90%; color:var(--violet);letter-spacing: 0.08em;">Anushree<br> Agrawal</div>
+            <p class = "desc" style="margin:4% 0%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis cum delectus beatae maxime, atque neque sed illum eaque, quas provident suscipit. Ratione in quasi corrupti dicta natus pariatur repudiandae optio.</p> 
+            <div></div>
+            <div class  = "button-tray">
+                <div class = "btn outline" style="margin-right:2%;"> Download CV</div>
+                <div class = "btn inverted hvr-bounce-to-right" style = "font-weight: 600;"> HIRE ME</div>
             </div>
         </div>
-        
-
        
     </section>
+    <section class = "about">
+        <div class = "container">
+            <div class = "left">
+                <div style = "font-size:40px;margin-bottom:10%;font-family: 'Pridi';color:var(--violet);width:100%;line-height: 1em;"> I'm a Programmer, <br>an IT specialist and<br> a Data Scientist.</div>
+                <div class = "desc"> With over # years of swashbuckling experience,<br>I'm currently working at XXXXXXXXXXX.<br> I graduated from <div>Malaviya National Institute of Technology Jaipur.<br> Looking forward to working with you!</div></div>
+            </div>
+            <div class = "right">
+                <div style= "font-size: 25px; padding:0px 20px;"> Any Queries or Discussions?</div>
+                <form class = "tap-n-send">
+                    <input type = "text" placeholder="Email ID here!">
+                    <textarea>Write Here!</textarea>
+                </form>
+                
+                <div style=" padding: 0px 20px;color: var(--grey-1);font-size:0.9em">or write to me at
+                    <div style = "display: flex;justify-content:space-around;">
+                        <div id = "mail-id" style="display:inlinel;color:var(--violet);font-size: 1.3em;font-weight: 600">anushreeagrawalkvc@gmail.com</div>
+                        <div class = "btn outline" style="padding:1%" onclick = "copyToClipboard()">Copy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "services">
+        <div class="container">
+            <div style = "height:20%"></div>
+            <div class="row">
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+                <div class="card hvr-sweep-to-top">
+                    <div class = "icon-hero"></div>
+                    <div class = "heading">Some Heading</div>
+                    <div class = "description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolor possimus non commodi, sed reiciendis consequuntur a nesciunt. Facere sint, facilis id tenetur laborum </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src = "index.js"></script>
 </html>

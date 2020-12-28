@@ -1,24 +1,30 @@
 
 body{
     margin:0;
-    --light-o:#e65212;
-    --dark-o:#e34500;
-    --dark-b:#0d102b;
-    --shadow:#d1d1d1;
-    --black:#212121;
+    --tint-r:#ffe6e6;
+    --light-r:#ff7373;
+    --dark-r:#ff4d4d;
+    --orange:#ff361c;
+    --grey-1:#424242;
+    --shadow-d:rgba(0,0,0,0.3);
+    --grey-0:#d6d6d6;
+    --grey-2:#242424;
+    --violet:#1d3859;
     background-color: var(--shadow);
-    font-family:Barlow;
+    font-family:Quicksand,sans-serif;;
 }
 header{
     background-color: white;
-    position: fixed;
+    position: absolute;
     top:0;
     left:0;
     width:100vw;
-    height:100px;
+    height: 70px;
     display:flex;
+    color:var(--grey-2);
     justify-content: space-between;
     align-items: space-around;
+    overflow: hidden;
 }
 header .my-logo{
     display: grid;
@@ -26,7 +32,7 @@ header .my-logo{
     align-items: center;
     width:12vw;
     grid-template-columns:30% 70%;
-
+    font-family:"Pridi";
 }
 
 
@@ -41,10 +47,11 @@ header .my-logo .img-dp {
     clip-path: circle(50% at 50% 50%);
 }
 header .my-logo .name{
-    font-size: 25px;
-    width: 100%;
+    font-size: 18px;
     overflow: hidden;
+    width: 120%;
     font-weight: 600;
+    padding:0px 20px;;
    
 }
 header .nav-right{
@@ -59,28 +66,25 @@ header .nav-right nav{
     align-items: center;
     height: 100%;;
 }
+
 ul{
     list-style-type: none;
 }
 li{
-    padding:10px 20px;
-    font-size: 18px;
+    padding: 15px 20px;
+    font-size: 13px;
     float:left;
     color:var(--black);
     font-weight: 600;
 }
 li:hover{
-    color:var(--dark-o);
+    color:var(--dark-r);
     cursor: pointer;
 }
 ul #free-c{
-    background-color: var(--light-o);
-    color: white;
-    border-radius: 6px;;
-    padding:10px 25px;
-    cursor: pointer;
     position: relative;
 }
+
 /* ul li::after{
     content:'';
     position: absolute;;
@@ -102,31 +106,172 @@ section{
     justify-content: center;
     align-items: center;
 }
-.container{
-    display:grid;
+.btn{
+    border-radius: 6px;;
+    padding:12px 30px;
+    cursor: pointer;
+}
+.inverted{
+    background-color: var(--light-r);
+    color: white;
+    
+}
+.outline{
+    border:solid 1px var(--grey-1);
+    color:black;
+    font-size: 0.8em;
+}
+
+.hero-section{
+    background-image: url("cover.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+    margin-top:-30px;
+}
+section{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+
+}
+
+
+.hero-cont{
+    position: absolute;
+    left:10vw;
+    top:20vh;
+    height:40vh;
+    width:50vw;
+    display: flex;;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.desc{
+    font-size: 1em;
+    letter-spacing: 0.08em;
+    line-height: 1.3em;;
+    font-weight: 600;
+}
+.button-tray{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.about{
+    display:flex;
+    height: 70vh;;
+    justify-content: center;
+    align-items:center;
+    background-color: white;
+}
+.about .container{
+    display: grid;
+    height:70%;
+    width: 60%;;
+
     grid-template-columns: 50% 50%;
 }
 
-.font{
-    font-family: "Della Respira";
+.about .container .left{
+    height: 100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
 }
-.container .left h3{
-    padding:10px;
-    font-size: 30px;
-    font-family: "Della Respira";
+.about .container .right{
+    height: 100%;
+    width: 100%;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--tint-r);
+    width: 100%;
 }
-.container .left p{
-    padding:10px;
+.about .container .tap-n-send{
+    display:grid;
+    height: 50%;;
+    margin: 5% 0%;
+    grid-template-rows: 20% 80%;
 }
-.container .right{
-    background-color: blue;
+.about .container .tap-n-send input, 
+    .about .container .tap-n-send textarea{
+        margin-left:2%;
+        margin-top: 2%;;
+    width: 90%;;
+    border-radius: 6px;;
+    color: var(--grey-1);
+    font-family: inherit;
+    font-size: 0.9em;;
+    border: solid 0px var(--grey-0);
+    padding:2%;
 }
-.container .right h3{
-    padding:10px;
-    font-size: 30px;
-    font-family: "Della Respira";
+.services{
+    position: relative;
+    height:130vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
 }
-.container .right p{
-    padding:10px;
-    font-size: 50px;
+.services .container{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 70%;;
+    justify-content: space-around;
+}
+.services .container .row{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services .container .row .card{
+    height: 100%;
+    width: 20%;
+    border-radius: 6px;;
+    border: solid 2px var(--grey-0);
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+    align-items: stretch;
+    grid-template-rows:40% 20% 40%;
+}
+
+.services .container .row .card:hover{
+    border-color: transparent;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.services .container .row .card .icon-hero{
+    background-image: url('cover.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(20% at 50% 50%);
+}
+
+.services .container .row .card .heading{
+    font-family: Pridi;
+    color:var(--violet);
+    font-size: 25px;;
+    width: 100%;;
+    text-align: center;
+}
+.services .container .row .card:hover .heading{
+    transition: 0.5s ease;
+    color:white;
+}
+.services .container .row .card .description{
+    font-size: 12px;;
+    text-align: center;
+    padding:5px;
 }
