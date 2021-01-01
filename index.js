@@ -8,3 +8,10 @@ function copyToClipboard() {
     document.body.removeChild(el);
 
   } 
+
+  var waypoint = new Waypoint({
+    element : document.getElementById('mail-id'),
+    handler: function(){
+      console.log('scrolled');
+    }
+  })
